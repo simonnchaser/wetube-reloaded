@@ -8,11 +8,10 @@ const PORT = 4000;
 
 const app = express();
 const logger = morgan("dev");
+
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
 app.use(logger);
-
-//이 라우터가 express한테 누군가가 "/videos"로 시작하는 url에 접근하면 videoRouter에 있는 컨트롤러를 찾게하는거야
-//그리고 이 라우터 안에는 "/watch"라는 url이 하나 있어
-
 app.use("/", globalRouter);
 app.use("/videos", videoRouter);
 app.use("/users", userRouter);

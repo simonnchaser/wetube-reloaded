@@ -7,9 +7,10 @@
 /login -> Login
 /search -> Search
 
-/user/:id -> See user
-/user/edit -> Edit MY Profile
-/user/delete -> Delete MY Profile
+/users/:id -> See user
+/users/logout -> Log Out
+/users/edit -> Edit MY Profile
+/users/delete -> Delete MY Profile
 
 /videos/:id -> See Video
 /videos/:id/edit -> Edit Video (너가 수정하고 싶은 동영상의 id)

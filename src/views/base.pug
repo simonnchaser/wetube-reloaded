@@ -1,0 +1,18 @@
+doctype html
+html(lang="ko")
+  head
+    title #{pageTitle} | Wetube
+    link(rel="stylesheet" href="https://unpkg.com/mvp.css")
+  body
+    header
+      h1=pageTitle 
+        //- 
+          #{}를 쓰지 않고 바로 변수를 사용할 수 있어 -> 다른 텍스트와 mixing하고 있지 않아
+          만약 h1 pageTitle 이렇게 쓰거나 h1 #{pageTitle} damm 이렇게 쓰면 text 그대로 혹은
+          변수와 텍스트의 mixing 형태로 보여지겠지 
+
+    main  
+      block content
+
+  include partials/footer
+    
