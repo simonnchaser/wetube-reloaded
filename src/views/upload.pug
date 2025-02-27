@@ -1,0 +1,10 @@
+extends base.pug
+
+block content
+    form(method="POST")
+        input(placeholder="title", required, type="text", name="title")
+        input(placeholder="rating", required, type="text", name="rating")
+        input(placeholder="comments", required, type="text", name="comments")
+        input(placeholder="createAt", required, type="text", name="createAt")
+        input(placeholder="views", required, type="text", name="views")
+        input(type="submit" value="Upload Video")
